@@ -111,7 +111,7 @@ main (int argc, char **argv)
   memcpy (src_mac, ifr.ifr_hwaddr.sa_data, 6 * sizeof (uint8_t));
 
   // Report source MAC address to stdout.
-  printf ("MAC address for interface %s is", interface);
+  printf ("MAC address for interface %s is ", interface);
   for (i=0; i<5; i++) {
     printf ("%02x:", src_mac[i]);
   }
